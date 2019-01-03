@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Enlaces Favoritos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto pr-4">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Portada
+                    </a>
+                </li>
+                
+                {{#if users }}
+                <li class="nav-item dropdown">
+                    <a href="/profile" class="nav-link">Perfil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Opciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/links">Mis enlaces</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/links/add">Agregar enlaces</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/salir" class="nav-link">
+                        Salir
+                    </a>
+                </li>
+                {{ else }}
+                <li class="nav-item">
+                    <a href="/conectarse" class="nav-link">
+                        Conectarse
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/registrarse" class="nav-link">
+                        Registrarse
+                    </a>
+                </li>
+                {{/if}}
+
+            </ul>
+        </div>
+    </div>
+</nav>

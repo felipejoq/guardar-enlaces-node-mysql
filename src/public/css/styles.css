@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Oswald', sans-serif;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('/img/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width: 992px){
+    .masthead h1{
+        font-size: 5.5rem;
+    }
+}
+
+.w150p{
+    width: 150px;
+}
